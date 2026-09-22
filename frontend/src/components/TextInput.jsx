@@ -11,7 +11,7 @@ function TextInput({ onAction }) {
   const handleCorrect = async () => {
     setLoading(true)
     try {
-      const response = await fetch('http://localhost:5000/api/correction', {
+      const response = await fetch('https://correction-app-arpo.onrender.com/api/correction', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text }),
@@ -29,7 +29,7 @@ function TextInput({ onAction }) {
   const handleTranslate = async () => {
     setLoading(true)
     try {
-      const response = await fetch('http://localhost:5000/api/translation', {
+      const response = await fetch('https://correction-app-arpo.onrender.com/api/translation', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text, targetLang }),
