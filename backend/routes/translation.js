@@ -6,7 +6,7 @@ router.post('/', async (req, res) => {
 
   try {
     const langpair = `fr|${targetLang}`;
-    const url = `const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${langpair}&de=votre.email@exemple.com`;`;
+    const url = `const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${langpair}&de=thelegenddev6@gmail.com`;`;
 
     const response = await fetch(url);
     const data = await response.json();
